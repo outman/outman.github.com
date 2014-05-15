@@ -96,5 +96,31 @@ class B extends A {
 B::test(); // B
 ?>
 ```
+
+```
+Note:
+在非静态环境下，所调用的类即为该对象实例所属的类。由于 $this-> 会在同一作用范围内尝试调用私有方法，而 static:: 则可能给出不同结果。另一个区别是 static:: 只能用于静态属性。
+```
+
+看下下面这段代码，5.2和5.3的比较，就知道了
+```
+class A {
+    public function create1() {
+        $class = get_class($this);
+        return new $class();
+    }
+    public function create2() {
+        return new static();
+    }
+}
+
+class B extends A {
+
+}
+
+$b = new B();
+var_dump(get_class($b->create1()), get_class($b->create2())); // B,B
+```
+
   [1]: http://stackoverflow.com/questions/5197300/new-self-vs-new-static "stackoverflow"
   [2]: http://php.net/manual/zh/language.oop5.late-static-bindings.php
