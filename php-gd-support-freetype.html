@@ -38,15 +38,18 @@
 <div class="container">
     <h3>php gd lib support freetype in mac os x</h3>
 <ul>
-<li>因为已经支持自带了gd库，不支持freetype，又没办法移除，所以只能重新编译php，进行覆盖。
-<code>php
-brew install jpeg
+<li>因为已经支持自带了gd库，不支持freetype，又没办法移除，所以只能重新编译php，进行覆盖。</li>
+</ul>
+<blockquote>
+<p>brew install jpeg
 brew install gd
 brew install freetype
-brew install libpng</code></li>
-</ul>
-<p>phpinfo() 获得默认php的编译参数，在原来参数基础上增加下面的参数重新编译安装进行覆盖.
-<code>--with-freetype-dir</code></p>
+brew install libpng</p>
+</blockquote>
+<p>phpinfo() 获得默认php的编译参数，在原来参数基础上增加下面的参数重新编译安装进行覆盖.</p>
+<blockquote>
+<p>--with-freetype-dir</p>
+</blockquote>
 </div>
 <script src="/static/js/jquery.min.js?v=0.1"></script>
 <script src="/static/bootstrap/js/bootstrap.min.js?v=0.1"></script>

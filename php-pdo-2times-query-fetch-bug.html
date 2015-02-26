@@ -37,8 +37,8 @@
 
 <div class="container">
     <h3>pdo(php5.2.8) 多次 query 后, fetch 失败的 bug .</h3>
-<p>```php
-$pdo = $this-&gt;pdoInstance("hp_slave"); 
+<blockquote>
+<p>$pdo = $this-&gt;pdoInstance("hp_slave"); 
 $stmt = $pdo-&gt;query($sql);
 if ($stmt) {
     $mx = $stmt-&gt;fetch(PDO::FETCH_ASSOC);
@@ -65,6 +65,7 @@ if ($stmt) {
 
                 if (isset($this-&gt;opt[$val["OperationType"]], $accounts[$val["CreatorId"]])) {
 </code></pre>
+</blockquote>
 <h4>相似问题参考链接：</h4>
 <p>[1] http://amiteshkumar.wordpress.com/2010/08/24/php-pdo-error-fix-sqlstatehy000-general-error-2050/
 [2] http://www.justskins.com/forums/35793-com-general-error-25815.html</p>

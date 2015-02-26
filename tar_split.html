@@ -37,15 +37,16 @@
 
 <div class="container">
     <h3>tar file split and merge</h3>
-<p>```shell
-tar zcvpf - source_file_name | split -d -b 100m</p>
+<p>split</p>
+<blockquote>
+<p>tar zcvpf - source_file_name | split -d -b 100m</p>
 <h1>result</h1>
 <h1>x01 x02 x03</h1>
-<p>```</p>
-<p>```shell</p>
-<h1>merge</h1>
-<p>cat x**** &gt;&gt; new.tar.gz
-```</p>
+</blockquote>
+<p>merge</p>
+<blockquote>
+<p>cat x**** &gt;&gt; new.tar.gz</p>
+</blockquote>
 </div>
 <script src="/static/js/jquery.min.js?v=0.1"></script>
 <script src="/static/bootstrap/js/bootstrap.min.js?v=0.1"></script>

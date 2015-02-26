@@ -37,8 +37,8 @@
 
 <div class="container">
     <h3>多列排序（字符串列和数字列）</h3>
-<p><code>data
-公司A,部门A,3
+<blockquote>
+<p>公司A,部门A,3
 公司A,部门B,0
 公司A,部门C,10
 公司A,部门D,9
@@ -50,12 +50,12 @@
 公司C,部门B,9
 公司C,部门C,100
 公司C,部门D,80
-公司C,部门E,60</code></p>
+公司C,部门E,60</p>
+</blockquote>
 <h4>按照第一列和第三列排序</h4>
-<p><code>shell
-sort -t$"," -k1,1 -k3nr,3 data.txt</code></p>
-<p><code>result
-公司A,部门C,10
+<blockquote>
+<p>sort -t$"," -k1,1 -k3nr,3 data.txt</p>
+<p>公司A,部门C,10
 公司A,部门D,9
 公司A,部门A,3
 公司A,部门B,0
@@ -67,7 +67,8 @@ sort -t$"," -k1,1 -k3nr,3 data.txt</code></p>
 公司C,部门D,80
 公司C,部门E,60
 公司C,部门A,30
-公司C,部门B,9</code></p>
+公司C,部门B,9</p>
+</blockquote>
 </div>
 <script src="/static/js/jquery.min.js?v=0.1"></script>
 <script src="/static/bootstrap/js/bootstrap.min.js?v=0.1"></script>
