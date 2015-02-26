@@ -37,22 +37,22 @@
 
 <div class="container">
     <h3>mysql command line option quick</h3>
-<blockquote>
-<p>mysql -utest -p<strong>*</strong>* -htest.db.com -P33060 test --quick -Bse "SELECT CONNECTION_ID();"
+<pre><code>mysql -utest -p****** -htest.db.com -P33060 test --quick -Bse "SELECT CONNECTION_ID();"
 |
 v
 Default options are read from the following files in the given order:
 /etc/my.cnf ~/.my.cnf
 The following groups are read: mysql client
 The following options may be given as the first argument:
---print-defaults  Print the program argument list and exit
---no-defaults     Don't read default options from any options file
---defaults-file=# Only read default options from the given file #
---defaults-extra-file=# Read this file after the global files are read</p>
-<p>Variables (--variable-name=value)
-and boolean options {FALSE|TRUE}  Value (after reading options)</p>
-<hr />
-<p>auto-rehash                       TRUE
+--print-defaults    Print the program argument list and exit
+--no-defaults       Don't read default options from any options file
+--defaults-file=#   Only read default options from the given file #
+--defaults-extra-file=# Read this file after the global files are read
+
+Variables (--variable-name=value)
+and boolean options {FALSE|TRUE}  Value (after reading options)
+--------------------------------- -----------------------------
+auto-rehash                       TRUE
 character-sets-dir                (No default value)
 default-character-set             latin1
 comments                          FALSE
@@ -74,17 +74,17 @@ sigint-ignore                     FALSE
 port                              3320
 prompt                            mysql&gt;
 quick                             FALSE
-......</p>
-</blockquote>
+......
+</code></pre>
 <h4>config ~/.my.cnf</h4>
-<blockquote>
-<p>[client]
-quick</p>
-<p>mysql -utest -p<strong>*</strong>* -htest.db.com -P33060 test --quick -Bse "SELECT CONNECTION_ID();"
+<pre><code>[client]
+quick
+
+mysql -utest -p****** -htest.db.com -P33060 test --quick -Bse "SELECT CONNECTION_ID();"
  |
  v
-4547014 # your connection id.</p>
-</blockquote>
+4547014 # your connection id.
+</code></pre>
 <p>NOTICE: --quick beofore -Bse</p>
 </div>
 <script src="/static/js/jquery.min.js?v=0.1"></script>

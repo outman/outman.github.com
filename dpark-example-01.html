@@ -37,39 +37,41 @@
 
 <div class="container">
     <h3>dpark example</h3>
-<blockquote>
-<h1>!/usr/bin/env python2.7</h1>
-<h1>coding: utf-8</h1>
-<p>from dpark import DparkContext
-from random import randrange</p>
-<p>def make_file():
+<pre><code>#!/usr/bin/env python2.7
+# coding: utf-8
+
+from dpark import DparkContext
+from random import randrange
+
+def make_file():
     with open("tmp.txt", "w") as fopen:
         for x in xrange(1, 1000000):
-            fopen.write("%s\t%s\t%s\n" % (randrange(1, 10), randrange(1, 10), randrange(100000, 999999)))</p>
-<p>if <strong>name</strong> == "<strong>main</strong>":</p>
-<pre><code>"""
-9*9=81 key
-"""
+            fopen.write("%s\t%s\t%s\n" % (randrange(1, 10), randrange(1, 10), randrange(100000, 999999)))
 
-make_file()
-dpark = DparkContext()
+if __name__ == "__main__":
 
-"""
-calc 81 key sum
-"""
+    """
+    9*9=81 key
+    """
 
-rdd = dpark.csvFile("tmp.txt", dialect="excel-tab")\
-    .map(lambda line: ((line[0], line[1]), line[2]))\
-    .reduceByKey(lambda current, next: int(current) + int(next))\
-    .map(lambda line: tuple([x for x in line[0]]) + (line[1],))\
-    .saveAsCSVFile("result")
+    make_file()
+    dpark = DparkContext()
 
-# result/0000 content like
-# 1,1, 6787766
-# 1,2, 6787766
-# 1,3, 6787766
+    """
+    calc 81 key sum
+    """
+
+    rdd = dpark.csvFile("tmp.txt", dialect="excel-tab")\
+        .map(lambda line: ((line[0], line[1]), line[2]))\
+        .reduceByKey(lambda current, next: int(current) + int(next))\
+        .map(lambda line: tuple([x for x in line[0]]) + (line[1],))\
+        .saveAsCSVFile("result")
+
+    # result/0000 content like
+    # 1,1, 6787766
+    # 1,2, 6787766
+    # 1,3, 6787766
 </code></pre>
-</blockquote>
 </div>
 <script src="/static/js/jquery.min.js?v=0.1"></script>
 <script src="/static/bootstrap/js/bootstrap.min.js?v=0.1"></script>

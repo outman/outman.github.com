@@ -37,17 +37,13 @@
 
 <div class="container">
     <h3>pdo(php 5.2) with mysql (5.1) load data local infile not work</h3>
-<p>php (not work)</p>
-<blockquote>
-<p>$pdo-&gt;setAttribute(PDO::MYSQL_ATTR_LOCAL_INFILE, true);
-$pdo-&gt;prepare($sql, array(PDO::MYSQL_ATTR_LOCAL_INFILE =&gt; true));</p>
-</blockquote>
-<p>php (√)</p>
-<blockquote>
-<p>$pdo = new PDO($dsn, $username, $passsword, array(
-    PDO::MYSQL_ATTR_LOCAL_INFILE =&gt; true,
-));</p>
-</blockquote>
+<p>php (not work)
+    $pdo-&gt;setAttribute(PDO::MYSQL_ATTR_LOCAL_INFILE, true);
+    $pdo-&gt;prepare($sql, array(PDO::MYSQL_ATTR_LOCAL_INFILE =    true));</p>
+<p>php (√)
+    $pdo = new PDO($dsn, $username, $passsword, array(
+        PDO::MYSQL_ATTR_LOCAL_INFILE =    true,
+    ));</p>
 </div>
 <script src="/static/js/jquery.min.js?v=0.1"></script>
 <script src="/static/bootstrap/js/bootstrap.min.js?v=0.1"></script>

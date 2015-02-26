@@ -42,11 +42,11 @@
 <p>分割的文件中，某个字段出现了双引号(doublequote)，所以导致分裂错误，似的从该双引号一直到</p>
 <p>结束阶段都是一个字段的值．所以一般遇到这种情况请查看你的数据文件是否正确．</p>
 <p><a href="http://stackoverflow.com/questions/15063936/csv-error-field-larger-than-field-limit-131072">SF</a> 上的解决办法，这个主要是解决真正的字段长度不够才需要的，而大部分时候我们都是不需要的．</p>
-<blockquote>
-<p>import sys
-import csv</p>
-<p>csv.field_size_limit(sys.maxsize)</p>
-</blockquote>
+<pre><code>import sys
+import csv
+
+csv.field_size_limit(sys.maxsize)
+</code></pre>
 </div>
 <script src="/static/js/jquery.min.js?v=0.1"></script>
 <script src="/static/bootstrap/js/bootstrap.min.js?v=0.1"></script>
