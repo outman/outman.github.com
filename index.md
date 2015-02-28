@@ -1,5 +1,11 @@
 ### Outman - 李爆爆炸
 
+Basic
+------------
+0. LNMP
+1. Python
+2. Shell
+
 Contact
 ------------
 0. pochonlee@gmail.com
@@ -7,4 +13,5 @@ Contact
 2. Weixin  : onlyoutman
 3. Twitter : https://twitter.com/pochonlee
 4. Weibo   : http://weibo.com/onlyoutman
+6. Github  : https://github.com/outman
 
