@@ -2,16 +2,16 @@
 
 Basic
 ------------
-0. LNMP
-1. Python
-2. Shell
+1. LNMP
+2. Python
+3. Shell
 
 Contact
 ------------
-0. pochonlee@gmail.com
-1. Q: 364292750
-2. Weixin  : onlyoutman
-3. Twitter : https://twitter.com/pochonlee
-4. Weibo   : http://weibo.com/onlyoutman
-6. Github  : https://github.com/outman
+1. pochonlee@gmail.com
+2. Q: 364292750
+3. Weixin  : onlyoutman
+4. Github  : https://github.com/outman
+5. Twitter : https://twitter.com/pochonlee
+6. Weibo   : http://weibo.com/onlyoutman
 
