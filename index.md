@@ -14,4 +14,5 @@ Contact
 4. Github  : https://github.com/outman
 5. Twitter : https://twitter.com/pochonlee
 6. Weibo   : http://weibo.com/onlyoutman
+7. TECHNOTE: http://blog.csdn.net/treesky
 
