@@ -5,6 +5,7 @@ Basic
 1. LNMP
 2. Python
 3. Shell
+4. C
 
 Contact
 ------------
