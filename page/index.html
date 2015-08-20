@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Outman's tech notes</title>
+  <title>page</title>
   <meta name="description" content="God help those who help themselves.">
 
 
@@ -20,7 +20,7 @@
   <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
-  <link rel="canonical" href="/">
+  <link rel="canonical" href="/page/">
   <link rel="alternate" type="application/rss+xml" title="Outman\'s Tech Notes" href="/feed.xml" />
 </head>
 
@@ -34,34 +34,41 @@
 </header>
 
     <article>
-        <h1 class="content-listing-header sans">文章列表</h1>
-  <ul class="content">
-    
-      <li class="listing">
-      	<hr class="slender">
-      	<a href="/articles/15/welcome-to-jekyll"><h4 class="contrast">Welcome to Jekyll!</h4></a>
-      	<span class="smaller">February 8, 2015</span>  <br/>
-		<div><p>You’ll find this post in your <code>_posts</code> directory - edit this post and re-build (or run with the <code>-w</code> switch) to see your changes!<br />
-To add new posts, simply add a file in the <code>_posts</code> directory that follows the convention: YYYY-MM-DD-name-of-post.ext.=]</p>
+      <h1>Page</h1>
+<p></p>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></div>
+<p><span class="newthought">In this first iteration</span>  of the <em>Tufte-Jekyll</em> theme, a post and a page have exactly the same layout. That means that all the typographic and structural details are identical between the two.</p>
 
-<p>Check out the <a href="http://jekyllrb.com">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/mojombo/jekyll">Jekyll’s GitHub repo</a>.</p>
+<h2 id="pages-and-posts">Pages and Posts</h2>
 
-</div>
-		
-      </li>
-    
-  </ul>
+<p>Jekyll provides for both pages and posts in its default configuration. I have left this as-is.</p>
+
+<h3 id="posts">Posts</h3>
+
+<p>Conceptually, posts are for recurring pieces of similar content such as might be found in a typical blog entry. Post content all sits in a folder named <code>_posts</code> and files are created in this folder<sup class="sidenote-number">1</sup><span class="sidenote"><sup class="sidenote-number">1</sup> Yes, a page has essentially the same old shit as a post</span> that are names with a date pre-pended to the title of the post. For instance <code>2105-02-20-this-is-a-post.md</code> is a perfectly valid post filename.</p>
+
+<p>Posts will always have a section above the content itself consisting of YAML front matter, which is meta-data information about the post. Minimally, a post title must always be present for it to be processed properly.</p>
+
+<pre><code>---
+Title: Some Title
+---
+## Content
+
+Markdown formatted content *here*.
+</code></pre>
+
+<h3 id="pages">Pages</h3>
+
+<p>Pages are any HTML documents <em>or</em> Markdown documents with YAML front matter that are then converted to content. Page material is more suited to static, non-recurring types of content. Like this</p>
+
+<p>I am not going to re-write the Jekyll documentation. Read it and you will figure out how the site is structured.</p>
+
+
+
 
     </article>
-    <span class="print-footer">Outman's tech notes - Outman</span>
+    <span class="print-footer">page - Outman</span>
     <footer>
   <ul class="footer-links group">
     <li><a href="mailto:pochonlee@gmail.com"><span class="icon-mail"></span></a></li>    
